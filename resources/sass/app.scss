@@ -1,0 +1,113 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Artifica');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+#whitebackground{
+  background-color: #ffffff;
+  text-align: center;
+  height: auto;
+}
+#box1, #box2, #box3{
+  display: inline-block;
+}
+html, body {
+    background: linear-gradient(to bottom, #ffff00 0%, #669900 100%);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+  color: #00cc00;
+  text-shadow: 1px 1px #006600;
+  font-family: 'Shojumaru', sans-serif;
+  font-size: 42px;
+  text-align: center;
+  line-height: 2em;
+}
+h2{
+  color: #660066;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+h3{
+  color: #ff0000;
+  text-shadow: 1px 1px #4d0000;
+  text-align: center;
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 36px;
+}
+h4{
+  color: #ff0000;
+  text-shadow: 1px 1px #4d0000;
+  text-align: center;
+  font-family: 'Artifica', sans-serif;
+  font-size: 22px;
+}
+#colorPurple{
+  color: #b300b3;
+  font-size: 20px;
+}
+#hrGold{
+  border: 3px solid #ff9900;
+  padding: 0;
+  margin: 0;
+}
+
+#hrGreen{
+    border: 1px solid #006600;
+    padding: 0;
+    margin: 0;
+}
+#linkGreen{
+  color: #00b300;
+  font-size: 20px;
+}
+#linkRed{
+  color: #b30000;
+  font-size: 20px;
+}
+//user's account page
+.col4created{
+  background-color: #006600;
+  padding: 1.5%;
+}
+.col12created1{
+  background-color: #e600ac;
+  color: #ffffff;
+  text-shadow: 0.8px 0.8px #66004d;
+  border-radius: 10px;
+  height: 100%;
+}
+.col12created2{
+  background-color: #33cc33;
+  color: #ffffff;
+  text-shadow: 0.8px 0.8px #66004d;
+  border-radius: 10px;
+  height: 100%;
+}
+.col4create{
+  background-color: #006600;
+  padding: 1%;
+}
+.col12create{
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.row{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
