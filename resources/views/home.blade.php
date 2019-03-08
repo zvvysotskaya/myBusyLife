@@ -11,18 +11,22 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-4 col4created">
-      <div class="col-lg-12 col12created1 text-center">
-        <p>shopping list</p>
-      </div>
+      <a href="{{ url('userpages.shoppinglist') }}">
+        <div class="col-lg-12 col12created1 text-center">
+          shopping list
+        </div>
+      </a>
     </div>
     <div class="col-lg-4 col4created">
-      <div class="col-lg-12 col12created2 text-center">
-        <p>chore list</p>
-      </div>
+      <a href="{{ url('userpages.chorelist') }}">
+        <div class="col-lg-12 col12created2 text-center">
+          chore list
+        </div>
+      </a>
     </div>
     <div class="col-lg-4 col4created">
       <div class="col-lg-12 col12created1 text-center">
-        <p>something else</p>
+        something else
       </div>
     </div>
   </div>
@@ -34,30 +38,30 @@
   <div class="row">
     <div class="col-lg-4 col4create">
       <div class="col-lg-12 col12create text-center">
-        <h4>Cretae a New Shopping List</h4>
+        <h4>Create a New Shopping List</h4>
         <br><br>
         <div class="dropdown">
           <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Categories
           <span class="caret"></span></button>
           <ul class="dropdown-menu">
-            <li class="text-center"><a href="{{ url('userpages.shoppinglistgroceries')}}">Groceries</a></li>
-            <li class="text-center"><a href="{{ url('userpages.shoppinglisthomegoods')}}">Home Goods</a></li>
-            <li class="text-center"><a href="{{ url('userpages.shoppinglistclothes')}}">Clothes</a></li>
+            <li class="text-center"><a href="{{ url('userpages.shoppinglistgroceries') }}">Groceries</a></li>
+            <li class="text-center"><a href="{{ url('userpages.shoppinglisthomegoods') }}">Home Goods</a></li>
+            <li class="text-center"><a href="{{ url('userpages.shoppinglistclothes') }}">Clothes</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="col-lg-4 col4create">
       <div class="col-lg-12 col12create text-center">
-      <a href="{{ url('userpages.chorelist')}}"><h4>Create a New Chore List</h4></a>
+      <h4>Create a New Chore List</h4>
       <br><br>
       <div class="dropdown">
         <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Categories
         <span class="caret"></span></button>
         <ul class="dropdown-menu">
-          <li class="text-center"><a href="{{ url('userpages.chorelisthome')}}">Household</a></li>
-          <li class="text-center"><a href="{{ url('userpages.chorelistjob')}}">Job</a></li>
-          <li class="text-center"><a href="{{ url('userpages.chorelistentertainment')}}">Entertainment</a></li>
+          <li class="text-center"><a href="{{ url('userpages.chorelisthome') }}">Household</a></li>
+          <li class="text-center"><a href="{{ url('userpages.chorelistjob') }}">Job</a></li>
+          <li class="text-center"><a href="{{ url('userpages.chorelistentertainment') }}">Entertainment</a></li>
         </ul>
       </div>
       </div>

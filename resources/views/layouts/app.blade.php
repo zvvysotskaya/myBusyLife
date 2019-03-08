@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Dancing Script" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Artifica Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Artifika" rel="stylesheet" type="text/css">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -87,7 +87,7 @@
                   </div>
               </div>
           </nav>
-          <hr id="hrGold">
+          <hr id="hrGold">       
           <hr id="hrGreen">
             <main class="py-4">
             @yield('content')

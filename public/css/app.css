@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Artifica);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Artifika);@import url(https://fonts.googleapis.com/css?family=Dancing Script);@import url(https://fonts.googleapis.com/css?family=Shojumaru);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -10704,10 +10704,10 @@ h3 {
 
 h4 {
   color: #ff0000;
-  text-shadow: 1px 1px #4d0000;
+  text-shadow: 0.5px 0.5px #4d0000;
   text-align: center;
-  font-family: "Artifica", sans-serif;
-  font-size: 22px;
+  font-family: "Artifika", sans-serif;
+  font-size: 24px;
 }
 
 #colorPurple {
@@ -10748,6 +10748,7 @@ h4 {
   text-shadow: 0.8px 0.8px #66004d;
   border-radius: 10px;
   height: 100%;
+  text-align: center;
 }
 
 .col12created2 {
@@ -10756,6 +10757,7 @@ h4 {
   text-shadow: 0.8px 0.8px #66004d;
   border-radius: 10px;
   height: 100%;
+  text-align: center;
 }
 
 .col4create {
