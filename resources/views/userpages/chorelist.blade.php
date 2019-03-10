@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+@section('title', 'chore list')
 <h3>Hello {{ Auth::user()->name }}</h3>
 <h1>My Chore List</h1>
 <h4>My Household Chore List</h4>

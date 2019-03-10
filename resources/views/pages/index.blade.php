@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+@section('title', 'home')
 <div id="whitebackground">
   <hr id="hrGreen">
     <div id="box1"><img src="images/welcomeFlower.jpg" width="74" alt="welcome flower"></div>

@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'ZVorganizer') }}</title>
+    <title>@yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -87,7 +87,7 @@
                   </div>
               </div>
           </nav>
-          <hr id="hrGold">       
+          <hr id="hrGold">
           <hr id="hrGreen">
             <main class="py-4">
             @yield('content')

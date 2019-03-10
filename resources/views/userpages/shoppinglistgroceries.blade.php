@@ -1,4 +1,4 @@
 @extends('layouts.app')
 @section('content')
-<h1>Shopping List Groceries</h1>
+<h1>Create A Groceries List</h1>
 @endsection
