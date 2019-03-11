@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Grocery;
 
 class HomeController extends Controller
 {
@@ -35,11 +36,13 @@ class HomeController extends Controller
     }
     public function shoppinglist()
     {
-      return view('userpages.shoppinglist');
+      $groceries = Grocery::all();
+      return view('userpages.shoppinglist', compact('groceries'));
     }
     public function shoppinglistgroceries()
     {
-      return view('userpages.shoppinglistgroceries');
+      $groceries = Grocery::all();
+      return view('userpages.shoppinglistgroceries', compact('groceries'));
     }
     public function shoppinglistclothes()
     {
