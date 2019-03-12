@@ -15,6 +15,7 @@ class CreateGroceriesTable extends Migration
     {
         Schema::create('groceries', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedinteger('user_id');
             $table->string('groceryname');
             $table->string('quantity');
             $table->string('description');

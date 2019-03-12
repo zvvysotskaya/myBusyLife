@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Grocery;
 
 class HomeController extends Controller
@@ -36,12 +37,12 @@ class HomeController extends Controller
     }
     public function shoppinglist()
     {
-      $groceries = Grocery::all();
+      $groceries = Grocery::all()->where('user_id', Auth::id());
       return view('userpages.shoppinglist', compact('groceries'));
     }
     public function shoppinglistgroceries()
     {
-      $groceries = Grocery::all();
+      $groceries = Grocery::all()->where('user_id', Auth::id() );
       return view('userpages.shoppinglistgroceries', compact('groceries'));
     }
     public function shoppinglistclothes()

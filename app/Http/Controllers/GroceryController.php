@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 //use App\Grocery;
 use Illuminate\Http\Request;
 use App\Grocery;
+use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class GroceryController extends Controller
 {
@@ -43,14 +45,17 @@ class GroceryController extends Controller
     public function store()
     {
       request()->validate([
+
         'groceryname' =>['required', 'min:2', 'max:100'],
         'quantity' =>['required', 'min:1', 'max:100'],
         'description' =>['required', 'min:1', 'max:250']
       ]);
       Grocery::create([
-      'groceryname' => request('groceryname'),
-      'quantity' => request('quantity'),
-      'description' => request('description')]);
+        'user_id' => Auth::id(),
+        'groceryname' => request('groceryname'),
+        'quantity' => request('quantity'),
+        'description' => request('description')
+      ]);
       return back();
     }
 
