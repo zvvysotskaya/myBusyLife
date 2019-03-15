@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Dancing Script" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Artifika" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon2.png">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
