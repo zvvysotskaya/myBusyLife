@@ -3,6 +3,24 @@
 @section('title', 'shopping list')
 <h3>Hello {{ Auth::user()->name }}</h3>
 <h1>My Shopping List</h1>
+
+<!--display buttons for a user account and a chore list-->
+
+@auth
+<div class="text-center">
+    <div class="btn-group">
+        <form action={{ '/userpages.chorelist' }}>
+            <button type="submit" class="btn btn-danger">Chore List</button><br>
+        </form>
+        <form action={{ '/home' }}>
+            <button class="btn btn-danger">Account</button>
+        </form>
+    </div>
+</div>
+@endauth
+
+<!--display a groecery list-->
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-3 col4create">
@@ -35,7 +53,7 @@
     </div>
 </div>
 
-<!--Show  a clothing list-->
+<!--Display  a clothing list-->
 
 <div class="container-fluid">
     <div class="row">
@@ -71,7 +89,7 @@
     </div>
 </div>
 
-<!--show a shopping list for household items-->
+<!--Display a shopping list for household items-->
 
 <div class="container-fluid">
     <div class="row">
@@ -104,9 +122,6 @@
         </div>
     </div>
 </div>
-@auth
-<a href="/userpages.chorelist">Chore List</a><br>
-<a href="/home">Your Account</a>
-@endauth
-{{date('m')}}
+
+{{date('m-d-y')}}
 @endsection
