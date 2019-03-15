@@ -25,8 +25,9 @@ Route::get('/userpages.chorelist', 'HomeController@chorelist')->name('userpages.
 Route::get('/userpages.shoppinglist', 'HomeController@shoppinglist')->name('userpages.shoppinglist');
 Route::get('/userpages.shoppinglistgroceries', 'HomeController@shoppinglistgroceries')->name('userpages.shoppinglistgroceries');
 Route::get('/userpages.shoppinglistclothes', 'HomeController@shoppinglistclothes')->name('userpages.shoppinglistclothes');
-Route::get('/userpages.shoppinglisthomegoods', 'HomeController@shoppinglisthomegoods')->name('userpages.shoppinglisthomegoods');
+Route::get('/userpages.shoppinglisthouseholditems', 'HomeController@shoppinglisthouseholditems')->name('userpages.shoppinglisthouseholditems');
 Route::get('/userpages.chorelisthome', 'HomeController@chorelisthome')->name('userpages.chorelisthome');
 Route::get('/userpages.chorelistjob', 'HomeController@chorelistjob')->name('userpages.chorelistjob');
 Route::get('/userpages.chorelistentertainment', 'HomeController@chorelistentertainment')->name('userpages.chorelistentertainment');
 Route::POST('/userpages.shoppinglistgroceries', 'GroceryController@store')->name('userpages.shoppinglistgroceries');
+Route::POST('/userpages.shoppinglisthouseholditems', 'HouseholditemController@store')->name('userpages.shoppinglisthouseholditems');

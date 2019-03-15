@@ -46,7 +46,7 @@
           <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li class="text-center"><a href="{{ url('userpages.shoppinglistgroceries') }}">Groceries</a></li>
-            <li class="text-center"><a href="{{ url('userpages.shoppinglisthomegoods') }}">Home Goods</a></li>
+            <li class="text-center"><a href="{{ url('userpages.shoppinglisthouseholditems') }}">Household Items</a></li>
             <li class="text-center"><a href="{{ url('userpages.shoppinglistclothes') }}">Clothes</a></li>
           </ul>
         </div>

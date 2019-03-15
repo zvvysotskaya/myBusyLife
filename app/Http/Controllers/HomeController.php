@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Grocery;
+use App\Householditem;
 
 class HomeController extends Controller
 {
@@ -29,29 +30,32 @@ class HomeController extends Controller
     }
     public function userindex()
     {
-      return view('userpages.userindex');
+        return view('userpages.userindex');
     }
     public function chorelist()
     {
-      return view('userpages.chorelist');
+        return view('userpages.chorelist');
     }
     public function shoppinglist()
     {
-      $groceries = Grocery::all()->where('user_id', Auth::id());
-      return view('userpages.shoppinglist', compact('groceries'));
+        $householditems = Householditem::all()->where('user_id', Auth::id());
+        $groceries = Grocery::all()->where('user_id', Auth::id());
+        return view('userpages.shoppinglist', compact('groceries', 'householditems'));//, 'householditems'));
     }
     public function shoppinglistgroceries()
     {
-      $groceries = Grocery::all()->where('user_id', Auth::id() );
-      return view('userpages.shoppinglistgroceries', compact('groceries'));
+
+        $groceries = Grocery::all()->where('user_id', Auth::id());
+        return view('userpages.shoppinglistgroceries', compact('groceries'));
     }
     public function shoppinglistclothes()
     {
       return view('userpages.shoppinglistclothes');
     }
-    public function shoppinglisthomegoods()
+    public function shoppinglisthouseholditems()
     {
-      return view('userpages.shoppinglisthomegoods');
+        $householditems = Householditem::all()->where('user_id', Auth::id());
+        return view('userpages.shoppinglisthouseholditems', compact('householditems'));
     }
     public function chorelisthome()
     {

@@ -40,4 +40,5 @@
 <a href="/userpages.chorelist">Chore List</a><br>
 <a href="/home">Your Account</a>
 @endauth
+{{date('m')}}
 @endsection
