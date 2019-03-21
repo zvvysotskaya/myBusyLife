@@ -7,6 +7,7 @@
         <div class="col-lg-6 col4create">
             <div class="col-lg-12 col12create">
                 <div class="container">
+                    <h4>Grocery name: {{$grocery->groceryname}}</h4>
                     <h2>Delete?</h2>
                     <form method="POST" action="/userpages/{{$grocery->id}}/deletegrocery" class="text-center">
                         @method('DELETE')

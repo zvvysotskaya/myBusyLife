@@ -7,7 +7,8 @@
         <div class="col-lg-6 col4create">
             <div class="col-lg-12 col12create">
                 <div class="container">
-                    <h2>Delete?</h2>
+                    <h4>Item name: {{$householditem->itemname}}</h4>
+                    <h2>Delete?</h2>                    
                     <form method="POST" action="/userpages/{{$householditem->id}}/deletehouseholditem" class="text-center">
                         @method('DELETE')
                         @csrf
