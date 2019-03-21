@@ -91,7 +91,11 @@ class GroceryController extends Controller
     public function update(Grocery $grocery)
     {
         $grocery->update(
-            request(['title', 'description', 'quantity'])
+            request([
+                'groceryname',
+                'description',
+                'quantity'
+            ])
         );
         return back();
     }

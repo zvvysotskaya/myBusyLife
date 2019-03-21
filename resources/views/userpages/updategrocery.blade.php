@@ -1,8 +1,6 @@
 @extends('layouts.itemheader')
 @section('content')
 <div class="container">
-    <h2>Update grocery</h2>
-
 </div>
 <div class="container-fluid">
     <div class="row">
@@ -11,6 +9,7 @@
         <div class="col-lg-6 col4create">
             <div class="col-lg-12 col12create">
                 <div class="container">
+                    <h2>Update a Grocery Item</h2>
                     <form method="POST" action="/userpages/{{$grocery->id}}/updategrocery" class="groceries">
                         @method('PATCH')
                         {{csrf_field()}}
