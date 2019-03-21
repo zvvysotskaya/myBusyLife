@@ -70,6 +70,11 @@ class GroceryController extends Controller
         return view('userpages.updategrocery', compact('grocery'));
     }
 
+    public function showDelete(Grocery $grocery)
+    {
+        return view('userpages.deletegrocery', compact('grocery'));
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -108,7 +113,8 @@ class GroceryController extends Controller
      */
     public function destroy(Grocery $grocery)
     {
-        //
+        $grocery->delete();
+        return redirect('/userpages.shoppinglistgroceries');
     }
 
     public function destroyAll()

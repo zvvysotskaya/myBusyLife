@@ -70,6 +70,11 @@ class HouseholditemController extends Controller
         return view('userpages.updatehouseholditem', compact('householditem'));
     }
 
+    public function showDelete(Householditem $householditem)
+    {
+        return view('userpages.deletehouseholditem', compact('householditem'));
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -108,6 +113,7 @@ class HouseholditemController extends Controller
      */
     public function destroy(Householditem $householditem)
     {
-        //
+        $householditem->delete();
+        return redirect('/userpages.shoppinglisthouseholditems');
     }
 }

@@ -69,7 +69,7 @@
                                 </form>
                             </th>
                             <th>
-                                <form method="GET" action="">
+                                <form method="GET" action="/userpages/{{$householditem->id}}/deletehouseholditem">
                                     <input type="submit" class="btn btn-danger" value="Delete">
                                 </form>
                             </th>
