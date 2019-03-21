@@ -31,3 +31,8 @@ Route::get('/userpages.chorelistjob', 'HomeController@chorelistjob')->name('user
 Route::get('/userpages.chorelistentertainment', 'HomeController@chorelistentertainment')->name('userpages.chorelistentertainment');
 Route::POST('/userpages.shoppinglistgroceries', 'GroceryController@store')->name('userpages.shoppinglistgroceries');
 Route::POST('/userpages.shoppinglisthouseholditems', 'HouseholditemController@store')->name('userpages.shoppinglisthouseholditems');
+Route::POST('/userpages.shoppinglist', 'GroceryController@destroyAll')->name('userpages.shoppinglist');
+Route::get('/userpages/{grocery}/updategrocery', 'GroceryController@show')->name('userpages/{grocery}/updategrocery');
+Route::PATCH('/userpages/{grocery}/updategrocery', 'GroceryController@update')->name('userpages/{grocery}/updategrocery');
+Route::get('/userpages/{householditem}/updatehouseholditem', 'HouseholditemController@show')->name('userpages/{householditem}/updatehouseholditem');
+Route::PATCH('/userpages/{householditem}/updatehouseholditem', 'HouseholditemController@update');

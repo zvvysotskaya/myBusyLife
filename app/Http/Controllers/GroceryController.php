@@ -67,7 +67,7 @@ class GroceryController extends Controller
      */
     public function show(Grocery $grocery)
     {
-        //
+        return view('userpages.updategrocery', compact('grocery'));
     }
 
     /**
@@ -88,9 +88,12 @@ class GroceryController extends Controller
      * @param  \App\Grocery  $grocery
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Grocery $grocery)
+    public function update(Grocery $grocery)
     {
-        //
+        $grocery->update(
+            request(['title', 'description', 'quantity'])
+        );
+        return back();
     }
 
     /**
@@ -102,5 +105,17 @@ class GroceryController extends Controller
     public function destroy(Grocery $grocery)
     {
         //
+    }
+
+    public function destroyAll()
+    {
+        //$grocery->delete();
+        $destroyGroceries = Grocery::find()->where('user_id', Auth::id())->get();
+        echo "Record deleted successfully.<br/>";
+        foreach($destroyGroceries as $destroyGrocery){
+            $destroyGrocery->delete();
+        }
+
+        return redirect('/userpages.shoppinglist');
     }
 }

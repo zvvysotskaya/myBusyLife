@@ -51,9 +51,11 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>Household Item Name</th>
-                                <th>Quantity</th>
-                                <th>Description</th>
+                                <th style="width:30%">Household Item Name</th>
+                                <th style="width:10%">Quantity</th>
+                                <th style="width:40%">Description</th>
+                                <th style="width:10%">Update</th>
+                                <th style="width:10%">Delete</th>
                             </tr>
                         </thead>
                         @foreach($householditems as $householditem)
@@ -61,6 +63,16 @@
                             <th>{{$householditem->itemname}}</th>
                             <th>{{$householditem->quantity}}</th>
                             <th>{{$householditem->description}}</th>
+                            <th>
+                                <form method="GET" action="/userpages/{{$householditem->id}}/updatehouseholditem">
+                                    <input type="submit" class="btn btn-info" value="Update">
+                                </form>
+                            </th>
+                            <th>
+                                <form method="GET" action="">
+                                    <input type="submit" class="btn btn-danger" value="Delete">
+                                </form>
+                            </th>
                         </tbody>
                         @endforeach
                     </table>

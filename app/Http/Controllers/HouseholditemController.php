@@ -67,7 +67,7 @@ class HouseholditemController extends Controller
      */
     public function show(Householditem $householditem)
     {
-        //
+        return view('userpages.updatehouseholditem', compact('householditem'));
     }
 
     /**
@@ -88,9 +88,16 @@ class HouseholditemController extends Controller
      * @param  \App\Householditem  $householditem
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Householditem $householditem)
+    public function update( Householditem $householditem)
     {
-        //
+        $householditem->update(
+            request([
+                'itemname',
+                'quantity',
+                'description'
+            ])
+        );
+        return back();
     }
 
     /**
