@@ -45,7 +45,7 @@ services:
       - "3306:3306"
     environment:
       MYSQL_DATABASE: myBusyLife
-      MYSQL_ROOT_PASSWORD: stoppervyvy
+      MYSQL_ROOT_PASSWORD: 
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
