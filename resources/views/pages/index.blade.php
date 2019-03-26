@@ -4,13 +4,13 @@
 <div id="whitebackground">
   <hr id="hrGreen">
     <div id="box1"><img src="images/welcomeFlower.jpg" width="74" alt="welcome flower"></div>
-      <div id="box2"><h1>Welcom to My Busy Life!</h1></div>
+      <div id="box2"><h1>Welcome to My Busy Life!</h1></div>
     <div id="box3"><img src="images/welcomeFlower.jpg" width="74" alt="welcome flower"></div>
   <hr id="hrGreen">
 </div>
 <br>
 <br>
-<h2>Register to My Busy Lif today, and you can build online your family budget,
+<h2>Register to My Busy Life today, and you can build online your family budget,
   create a shopping list, create a chore list, and more.</h2>
   <div class="text-center">
       @if (Route::has('login'))
