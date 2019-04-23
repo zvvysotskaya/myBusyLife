@@ -8,7 +8,7 @@ class Grocery extends Model
 {
     protected $guarded = [];
 
-    public function user1()
+    public function user()
     {
       return $this->belongsTo(User::class);
     }
