@@ -15,13 +15,19 @@ class GroceriesTest extends TestCase
      * @return void
      */
      /** @test */
-    public function a_authorized_user_can_see_a_hisown_grocerylist()
+    public function an_authorized_user_can_manage_hisown_grocerylist()
     {
-      $this->withoutExceptionHandling();
+    //  $this->withoutExceptionHandling();
       $this->actingAs(factory('App\User')->create());
-      $attributes=factory('App\Grocery')->raw();
+      $grocery = factory('App\Grocery')->create();
+      $attributes = factory('App\Grocery')->raw();
       $this->get('/userpages.shoppinglistgroceries', $attributes)
-      ->assertStatus(200);
-
+      ->assertStatus(200);//view groceies list
+      $this->post('/userpages.shoppinglistgroceries', $attributes)
+      ->assertRedirect('/userpages.shoppinglistgroceries');//create grocery
+      $this->get($grocery->path() . '/updategrocery', $attributes)
+      ->assertStatus(200); //view grocery
+      $this->patch($grocery->path() . '/updategrocery', $attributes)
+      ->assertRedirect($grocery->path() . '/updategrocery');//update grocery
     }
 }
