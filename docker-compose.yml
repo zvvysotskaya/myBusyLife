@@ -45,7 +45,7 @@ services:
       - "3306:3306"
     environment:
       MYSQL_DATABASE: myBusyLife
-      MYSQL_ROOT_PASSWORD: stoppervyvy
+      MYSQL_ROOT_PASSWORD:
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
@@ -66,8 +66,8 @@ services:
       PMA_ARBITRARY: 1
       PMA_HOST: db
       PMA_VERBOSE: localhost
-      PMA_USER: root
-      PMA_PASSWORD: stoppervyvy
+      PMA_USER:
+      PMA_PASSWORD:
     networks:
       - app-network
 
