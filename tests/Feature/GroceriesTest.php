@@ -32,9 +32,18 @@ class GroceriesTest extends TestCase
 
       $this->get($grocery->path() . '/updategrocery', $attributes)
       ->assertStatus(200); //view grocery
-      
+
       $this->patch($grocery->path() . '/updategrocery', $attributes)
       ->assertRedirect($grocery->path() . '/updategrocery');//update grocery
       //add user can view grocery list
     }
+
+    /** @test */
+    public function login_and_register_pages_can_be_accessed()
+    {
+      $this->get('login')->assertStatus(200);
+
+      $this->get('register')->assertStatus(200);
+    }
+    
 }
