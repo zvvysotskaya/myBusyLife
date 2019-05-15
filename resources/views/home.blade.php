@@ -78,17 +78,17 @@
   <div class="row">
     <div class="col-lg-4 col4created">
       <div class="col-lg-6 col12created1 text-center">
-        <p>shopping</p>
+        shopping
       </div>
     </div>
     <div class="col-lg-4 col4created">
       <div class="col-lg-6 col12created2 text-center">
-        <p>chore</p>
+        chore
       </div>
     </div>
     <div class="col-lg-4 col4created">
       <div class="col-lg-6 col12created1 text-center">
-        <p>something else</p>
+        something else
       </div>
     </div>
   </div>
