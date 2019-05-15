@@ -2004,11 +2004,6 @@ pre code {
   opacity: 1;
 }
 
-.form-control::-moz-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
-
 .form-control:-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -4945,10 +4940,8 @@ input[type=button].btn-block {
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
-       -moz-column-count: 3;
             column-count: 3;
     -webkit-column-gap: 1.25rem;
-       -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
@@ -10756,6 +10749,8 @@ h4 {
   border-radius: 10px;
   height: 100%;
   text-align: center;
+  margin-left: 25%;
+  padding: 2%;
 }
 
 .col12created2 {
@@ -10765,11 +10760,13 @@ h4 {
   border-radius: 10px;
   height: 100%;
   text-align: center;
+  margin-left: 25%;
+  padding: 2%;
 }
 
 .col4create {
   background-color: #006600;
-  padding: 1%;
+  padding: 1.5%;
 }
 
 .col12create {

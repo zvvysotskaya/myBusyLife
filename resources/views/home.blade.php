@@ -13,20 +13,20 @@
   <div class="row">
     <div class="col-lg-4 col4created">
       <a href="{{ url('userpages.shoppinglist') }}">
-        <div class="col-lg-12 col12created1 text-center">
+        <div class="col-lg-6 col12created1 text-center">
           shopping list
         </div>
       </a>
     </div>
     <div class="col-lg-4 col4created">
       <a href="{{ url('userpages.chorelist') }}">
-        <div class="col-lg-12 col12created2 text-center">
+        <div class="col-lg-6 col12created2 text-center">
           chore list
         </div>
       </a>
     </div>
     <div class="col-lg-4 col4created">
-      <div class="col-lg-12 col12created1 text-center">
+      <div class="col-lg-6 col12created1 text-center">
         something else
       </div>
     </div>
@@ -77,17 +77,17 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-4 col4created">
-      <div class="col-lg-12 col12created1 text-center">
+      <div class="col-lg-6 col12created1 text-center">
         <p>shopping</p>
       </div>
     </div>
     <div class="col-lg-4 col4created">
-      <div class="col-lg-12 col12created2 text-center">
+      <div class="col-lg-6 col12created2 text-center">
         <p>chore</p>
       </div>
     </div>
     <div class="col-lg-4 col4created">
-      <div class="col-lg-12 col12created1 text-center">
+      <div class="col-lg-6 col12created1 text-center">
         <p>something else</p>
       </div>
     </div>
