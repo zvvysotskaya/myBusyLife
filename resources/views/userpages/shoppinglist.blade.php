@@ -46,7 +46,7 @@
                               @endforeach
                         </table>
                     </div>
-                    <form method="POST" action="{{ url('userpages/shoppinglist', [Auth::id()])}}">
+                    <form method="POST" action="{{ url('userpages/shoppinglist') }}">
                         @method('DELETE')
                         {{ csrf_field() }}
                         <button type="submit" class="btn btn-warning">Delete All</button>

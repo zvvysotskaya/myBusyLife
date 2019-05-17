@@ -120,12 +120,12 @@ class GroceryController extends Controller
     public function destroyAll()
     {
         //$grocery->delete();
-        $destroyGroceries = Grocery::find()->where('user_id', Auth::id())->get();
-        echo "Record deleted successfully.<br/>";
+        $destroyGroceries = Grocery::all()->where('user_id', Auth::id());
+
         foreach($destroyGroceries as $destroyGrocery){
             $destroyGrocery->delete();
         }
 
-        return redirect('/userpages.shoppinglist');
+        return back();
     }
 }

@@ -6,6 +6,8 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Model;
+use App\Grocery;
+use App\Householitem;
 
 class User extends Authenticatable
 {
@@ -40,5 +42,10 @@ class User extends Authenticatable
     public function groceries()
     {
       return $this->hasMany(Grocery::class);
+    }
+
+    public function householditems()
+    {
+        return $this->hasMany(Householditem::class);
     }
 }

@@ -38,5 +38,7 @@ Route::get('/userpages/{householditem}/updatehouseholditem', 'HouseholditemContr
 Route::PATCH('/userpages/{householditem}/updatehouseholditem', 'HouseholditemController@update');
 Route::get('/userpages/{grocery}/deletegrocery', 'GroceryController@showDelete');
 Route::DELETE('/userpages/{grocery}/deletegrocery', 'GroceryController@destroy');
+Route::DELETE('/userpages/shoppinglist', 'GroceryController@destroyAll');
+
 Route::get('/userpages/{householditem}/deletehouseholditem', 'HouseholditemController@showDelete');
 Route::DELETE('/userpages/{householditem}/deletehouseholditem', 'HouseholditemController@destroy');

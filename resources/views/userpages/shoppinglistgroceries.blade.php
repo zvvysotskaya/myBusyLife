@@ -62,12 +62,12 @@
                     <th>{{$grocery->quantity}}</th>
                     <th>{{$grocery->description}}</th>
                     <th>
-                        <form method="GET" action="/userpages/{{$grocery->id}}/updategrocery">
+                        <form method="GET" action="/userpages/{{ $grocery->id }}/updategrocery">
                             <input type="submit" class="btn btn-info" value="Update">
                         </form>
                     </th>
                     <th>
-                        <form method="GET" action="/userpages/{{$grocery->id}}/deletegrocery">
+                        <form method="GET" action="/userpages/{{ $grocery->id }}/deletegrocery">
                             <input type="submit" class="btn btn-danger" value="Delete">
                         </form>
                     </th>
