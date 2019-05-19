@@ -10753,6 +10753,36 @@ h4 {
   padding: 2%;
 }
 
+.btn1 {
+  background-color: #e600ac;
+  color: #ffffff;
+  text-shadow: 0.8px 0.8px #66004d;
+  border-radius: 10px;
+  height: 100%;
+  text-align: center;
+  padding: 2%;
+}
+
+.btn2 {
+  background-color: #33cc33;
+  color: #ffffff;
+  text-shadow: 0.8px 0.8px #66004d;
+  border-radius: 10px;
+  height: 100%;
+  text-align: center;
+  padding: 2%;
+}
+
+.btn3 {
+  background-color: #ffff00;
+  color: #ffffff;
+  text-shadow: 0.8px 0.8px #66004d;
+  border-radius: 10px;
+  height: 100%;
+  text-align: center;
+  padding: 2%;
+}
+
 .col12created2 {
   background-color: #33cc33;
   color: #ffffff;
