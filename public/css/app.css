@@ -10661,12 +10661,6 @@ a.text-dark:focus {
   height: auto;
 }
 
-#box1,
-#box2,
-#box3 {
-  display: inline-block;
-}
-
 html,
 body {
   background: linear-gradient(to bottom, #ffff00 0%, #669900 100%);
@@ -10735,6 +10729,15 @@ h4 {
 #linkRed {
   color: #b30000;
   font-size: 20px;
+}
+
+.imageHome img {
+  transition: 0.3s ease;
+}
+
+.imageHome img:hover {
+  -webkit-transform: scale(1.2) rotate(12deg);
+  transform: scale(1.2) rotate(12deg);
 }
 
 .col4created {
