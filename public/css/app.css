@@ -10786,6 +10786,16 @@ h4 {
   padding: 2%;
 }
 
+.bg-tb {
+  background-color: #006600;
+}
+
+.bg-box {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 2%;
+}
+
 .col12created2 {
   background-color: #33cc33;
   color: #ffffff;
@@ -10810,8 +10820,11 @@ h4 {
   padding-bottom: 2em;
 }
 
-.row {
-  margin-top: 2em;
-  margin-bottom: 2em;
+.table_shoppinglist {
+  background-color: #FFFFFF;
+}
+
+.table_shoppinglist:hover {
+  background-color: #b3ffcc;
 }
 
