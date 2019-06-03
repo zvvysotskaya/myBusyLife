@@ -40,18 +40,13 @@
                   </ul>-->
 
                   <ul class="navbar-nav ml-auto">
-                  <li class="nav-item" >
-                      <a class="nav-link" href="pages.index" id="colorPurple">Home</a>
-                  </li>
-
-                  <li class="nav-item">
-                      <a class="nav-link" href="pages.about" id="colorPurple">About</a>
-                  </li>
-
-                  <li class="nav-item" >
-                      <a class="nav-link" href="pages.contact" id="colorPurple">Contact</a>
-                  </li>
-                </ul>
+                      <li class="nav-item">
+                          <a class="nav-link" href="pages.index" id="colorPurple">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="pages.about" id="colorPurple">About</a>
+                      </li>
+                  </ul>
 
                     <!-- Right Side Of Navbar -->
                       <ul class="navbar-nav ml-auto">
