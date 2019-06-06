@@ -21,6 +21,7 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon2.png">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
@@ -39,12 +40,12 @@
 
                   </ul>-->
 
-                  <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                          <a class="nav-link" href="pages.index" id="colorPurple">Home</a>
+                  <ul class="nav  nav-bar">
+                      <li class="nav-item" >
+                          <a class="nav-link"  href="pages.index" id="colorPurple">Home</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="pages.about" id="colorPurple">About</a>
+                          <a class="nav-link"  href="pages.about" id="colorPurple" >About</a>
                       </li>
                   </ul>
 
@@ -89,5 +90,6 @@
             @yield('content')
         </main>
     </div>
+
 </body>
 </html>

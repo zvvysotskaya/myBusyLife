@@ -19,7 +19,7 @@
     <h2>Register to My Busy Life today, and you can build online your family budget,
         create a shopping list, create a chore list, and more.
     </h2>
-    <div class="text-center">
+    <div class="text-center mb-5">
       @if (Route::has('login'))
           @auth
               <form action="{{'/home'}}">
@@ -32,7 +32,7 @@
                   <button type="submit" class="btn btn-danger">Register<span class="spinner-grow spinner-grow-sm text-warning"></span></button>
                 </form>
             @endif
-<br><br><br><br>
+
     </div>
 </div>
 
