@@ -20,9 +20,9 @@
 @endauth
 
 <!--display a groecery list-->
-<div class="bg-tb mt-5 py-4">
+<div class="bg_tb mt-5 py-4">
     <div class="container">
-        <div class="bg-box">
+        <div class="bg_box">
             <h4>A Grocery List</h4>
             <div class="container">
                 <table class="table table-hover ">
@@ -53,9 +53,9 @@
       </div>
 </div>
 <!--Display  a clothing list-->
-<div class="bg-tb mt-5 py-4 mt-md-0 mt-sm-0">
+<div class="bg_tb mt-5 py-4 mt-md-0 mt-sm-0">
     <div class="container">
-        <div class="bg-box">
+        <div class="bg_box">
             <h4>A Clothing List</h4>
             <div class="container">
                 <table class="table table-hover">
@@ -82,9 +82,9 @@
 
 <!--Display a shopping list for household items-->
 
-<div class="bg-tb mt-5 py-4 mt-md-0 mt-sm-0">
+<div class="bg_tb mt-5 py-4 mt-md-0 mt-sm-0">
     <div class="container">
-        <div class="bg-box">
+        <div class="bg_box">
             <h4>Household Items</h4>
             <div class="container">
                 <table class="table table-hover">

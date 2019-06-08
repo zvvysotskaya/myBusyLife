@@ -8,7 +8,7 @@
         <img src="images/welcomeFlower.jpg"  alt="welcome flower" class="img-fluid float-left d-block ">
     </div>
     <div class="col-6 text-center">
-        <h1>Welcome to My Busy Life!</h1>
+        <h1 class="mt-3">Welcome to My Busy Life!</h1>
     </div>
     <div class="col-2 offset-1 float-left imageHome">
         <img src="images/welcomeFlower.jpg" alt="welcome flower" class="img-fluid d-block float-left">
@@ -27,11 +27,22 @@
               </form><br>
           @endauth
           @endif
+          @auth
+          <div class="d-none">
              @if(Route::has('register'))
                 <form action="{{ route('register') }}">
                   <button type="submit" class="btn btn-danger">Register<span class="spinner-grow spinner-grow-sm text-warning"></span></button>
                 </form>
+                @endif
+            </div>
+            @else
+            @if(Route::has('register'))
+            <form action="{{ route('register') }}">
+              <button type="submit" class="btn btn-danger">Register<span class="spinner-grow spinner-grow-sm text-warning"></span></button>
+            </form>
             @endif
+            @endauth
+
 
     </div>
 </div>

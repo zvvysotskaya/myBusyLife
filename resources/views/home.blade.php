@@ -43,16 +43,25 @@
             <div class="col-lg-12 col12create text-center">
                 <h4>Create a New Shopping List</h4>
                 <br><br>
-                <div class="dropdown">
-                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">
-                        Categories
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li class="text-center"><a href="{{ url('userpages.shoppinglistgroceries') }}">Groceries</a></li>
-                        <li class="text-center"><a href="{{ url('userpages.shoppinglisthouseholditems') }}">Household Items</a></li>
-                        <li class="text-center"><a href="{{ url('userpages.shoppinglistclothes') }}">Clothes</a></li>
-                    </ul>
+                <div class="dropdown_icons">
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="mr-3">
+                        <div class="dropdown">
+                            <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">
+                                Categories
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="text-center"><a href="{{ url('userpages.shoppinglistgroceries') }}">Groceries</a></li>
+                                <li class="text-center"><a href="{{ url('userpages.shoppinglisthouseholditems') }}">Household Items</a></li>
+                                <li class="text-center"><a href="{{ url('userpages.shoppinglistclothes') }}">Clothes</a></li>
+                            </ul>
+                        </div><!--dropdown-->
+                        </li>
+                        <li class="ml-3">
+                            <img src="images/icon_shopping_bag_green2.png" alt="icon shopping bag" class="img-fluid">
+                        </li>
+                    </ul><!--col-md-6 -->
                 </div>
             </div>
         </div>
@@ -60,17 +69,24 @@
             <div class="col-lg-12 col12create text-center">
                 <h4>Create a New Chore List</h4>
                 <br><br>
-                <div class="dropdown">
-                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">
-                        Categories
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li class="text-center"><a href="{{ url('userpages.chorelisthome') }}">Household</a></li>
-                        <li class="text-center"><a href="{{ url('userpages.chorelistjob') }}">Job</a></li>
-                        <li class="text-center"><a href="{{ url('userpages.chorelistentertainment') }}">Entertainment</a></li>
-                    </ul>
-                </div>
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="mr-3">
+                    <div class="dropdown">
+                        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">
+                            Categories
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="text-center"><a href="{{ url('userpages.chorelisthome') }}">Household</a></li>
+                            <li class="text-center"><a href="{{ url('userpages.chorelistjob') }}">Job</a></li>
+                            <li class="text-center"><a href="{{ url('userpages.chorelistentertainment') }}">Entertainment</a></li>
+                        </ul>
+                    </div><!--dropdown-->
+                    </li>
+                    <li class="ml-3">
+                        <img src="images/icon_thumbtack_blue2.png" alt="icon shopping bag" class="img-fluid">
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="col-lg-4 col4create">

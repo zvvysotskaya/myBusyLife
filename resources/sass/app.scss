@@ -30,15 +30,15 @@ h1{
   font-family: 'Shojumaru', sans-serif;
   font-size: 42px;
   text-align: center;
-  line-height: 2em;
+  line-height: 3rem;
 }
 h2{
   color: #660066;
   text-align: center;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 h3{
   color: #ff0000;
@@ -87,7 +87,7 @@ h4{
     -ms-transform: scale(1.2) rotate(12deg);
     transform: scale(1.2) rotate(12deg);
 }
- 
+
 //user's account page
 .col4created{
   background-color: #006600;
@@ -130,25 +130,24 @@ h4{
     text-align: center;
     padding: 2%;
 }
-.bg-tb {
+.bg_tb {
     background-color: #006600;
-
 }
-.bg-box {
+.bg_box {
     background-color: #FFFFFF;
     border-radius: 10px;
     padding: 2%;
 }
-.col12created2{
-  background-color: #33cc33;
-  color: #ffffff;
-  text-shadow: 0.8px 0.8px #66004d;
-  border-radius: 10px;
-  height: 100%;
-  text-align: center;
-  margin-left: 25%;
-  padding: 2%;
-}
+//.col12created2{
+//  background-color: #33cc33;
+ // color: #ffffff;
+ // text-shadow: 0.8px 0.8px #66004d;
+//  border-radius: 10px;
+ // height: 100%;
+//  text-align: center;
+//  margin-left: 25%;
+//  padding: 2%;
+//}
 .col4create{
   background-color: #006600;
   padding: 1.5%;
@@ -157,10 +156,19 @@ h4{
   background-color: #ffffff;
   border-radius: 10px;
   height: 100%;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-
+.bg_list {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.dropdown_icons ul.list-group{
+    border-style: none;
+}
 
 .table_shoppinglist {
     background-color: #FFFFFF;
