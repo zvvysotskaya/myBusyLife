@@ -65,7 +65,7 @@
                             <th>{{$householditem->description}}</th>
                             <th>
                                 <form method="GET" action="/userpages/{{$householditem->id}}/updatehouseholditem">
-                                    <input type="submit" class="btn btn-info" value="Update">
+                                    <input type="submit" class="btn btn-primary" value="Update">
                                 </form>
                             </th>
                             <th>

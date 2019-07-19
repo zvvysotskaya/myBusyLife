@@ -116,4 +116,15 @@ class HouseholditemController extends Controller
         $householditem->delete();
         return redirect('/userpages.shoppinglisthouseholditems');
     }
+    public function destroyAll()
+    {
+        //$grocery->delete();
+        $destroyHouseholditems = Householditem::all()->where('user_id', Auth::id());
+
+        foreach($destroyHouseholditems as $destroyHouseholditem){
+            $destroyHouseholditem->delete();
+        }
+
+        return back();
+    }
 }
