@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use App\Clothing;
+use Illuminate\Support\Facades\Auth;
 
-class CothingController extends Controller
+class ClothingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,22 +15,8 @@ class CothingController extends Controller
      * @return \Illuminate\Http\Response
      */
      public function __construct(){
-       $this->middleware->('auth');
+       $this->middleware('auth');
      }
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -35,7 +24,7 @@ class CothingController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+     public function store()
     {
       {
         request()->validate([
@@ -57,43 +46,36 @@ class CothingController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Clothing  $grocery
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+     public function show(Clothing $clothing)
     {
-        //
+        return view('userpages.updateclothes', compact('clothing'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
+    public function showDelete(Clothing $clothing)
     {
-        //
+        return view('userpages.deleteclothes', compact('clothing'));
     }
-
-    /**
+  /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Clothing  $grocery
      * @return \Illuminate\Http\Response
      */
-     public function update(Clothing $clothing)
-     {
-         $clothing->update(
-             request([
-                 'clothing',
-                 'description',
-                 'quantity'
-             ])
-         );
-         return back();
-     }
+    public function update(Clothing $clothing)
+    {
+        $clothing->update(
+            request([
+                'clothing',
+                'description',
+                'quantity'
+            ])
+        );
+        return redirect('/userpages.shoppinglistclothes');
+    }
 
     /**
      * Remove the specified resource from storage.
@@ -106,14 +88,13 @@ class CothingController extends Controller
          $clothing->delete();
          return redirect('/userpages.shoppinglistclothes');
      }
-
      public function destroyAll()
      {
          //$grocery->delete();
          $destroyClothings = Clothing::all()->where('user_id', Auth::id());
 
          foreach($destroyClothings as $destroyClothing){
-             $destroyClothin->delete();
+             $destroyClothing->delete();
          }
 
          return back();

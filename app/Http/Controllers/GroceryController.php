@@ -16,25 +16,6 @@ class GroceryController extends Controller
  {
      $this->middleware('auth');
  }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -75,18 +56,7 @@ class GroceryController extends Controller
         return view('userpages.deletegrocery', compact('grocery'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Grocery  $grocery
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Grocery $grocery)
-    {
-        //
-    }
-
-    /**
+      /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -102,7 +72,7 @@ class GroceryController extends Controller
                 'quantity'
             ])
         );
-        return back();
+        return redirect('/userpages.shoppinglistgroceries');
     }
 
     /**

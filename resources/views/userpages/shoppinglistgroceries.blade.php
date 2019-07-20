@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<h1>Create A Groceries List</h1>
+<h1>Create / Manage A Groceries List</h1>
 @Auth
 <div class="text-center">
     <div class="btn-group">
@@ -74,6 +74,13 @@
                 </tbody>
                 @endforeach
             </table>
+            <div class="text-center">
+                <form method="POST" action="{{ url('userpages/shoppinglistgroceries') }}">
+                    @method('DELETE')
+                    {{ csrf_field() }}
+                    <button type="submit" class="btn btn-warning">Delete All</button>
+                </form>
+            </div>
         </div>
     </div>
     </div>

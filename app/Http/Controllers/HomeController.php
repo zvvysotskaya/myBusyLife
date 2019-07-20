@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Grocery;
 use App\Householditem;
+use App\Clothing;
 
 class HomeController extends Controller
 {
@@ -40,7 +41,8 @@ class HomeController extends Controller
     {
         $householditems = Householditem::all()->where('user_id', Auth::id());
         $groceries = Grocery::all()->where('user_id', Auth::id());
-        return view('userpages.shoppinglist', compact('groceries', 'householditems'));//, 'householditems'));
+        $clothings = Clothing::all()->where('user_id', Auth::id());
+        return view('userpages.shoppinglist', compact('groceries', 'householditems', 'clothings'));//, 'householditems'));
     }
     public function shoppinglistgroceries()
     {
@@ -50,7 +52,8 @@ class HomeController extends Controller
     }
     public function shoppinglistclothes()
     {
-      return view('userpages.shoppinglistclothes');
+      $clothings = Clothing::all()->where('user_id', Auth::id());
+      return view('userpages.shoppinglistclothes', compact('clothings'));
     }
     public function shoppinglisthouseholditems()
     {

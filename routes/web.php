@@ -30,17 +30,26 @@ Route::get('/userpages.chorelisthome', 'HomeController@chorelisthome')->name('us
 Route::get('/userpages.chorelistjob', 'HomeController@chorelistjob')->name('userpages.chorelistjob');
 Route::get('/userpages.chorelistentertainment', 'HomeController@chorelistentertainment')->name('userpages.chorelistentertainment');
 //shopinglist
+//store
 Route::POST('/userpages.shoppinglistgroceries', 'GroceryController@store')->name('userpages.shoppinglistgroceries');
 Route::POST('/userpages.shoppinglisthouseholditems', 'HouseholditemController@store')->name('userpages.shoppinglisthouseholditems');
-Route::POST('/userpages.shoppinglist', 'GroceryController@destroyAll')->name('userpages.shoppinglist');
+Route::POST('/userpages.shoppinglistclothes', 'ClothingController@store');
+
 Route::get('/userpages/{grocery}/updategrocery', 'GroceryController@show')->name('userpages/{grocery}/updategrocery');
 Route::PATCH('/userpages/{grocery}/updategrocery', 'GroceryController@update')->name('userpages/{grocery}/updategrocery');
 Route::get('/userpages/{householditem}/updatehouseholditem', 'HouseholditemController@show')->name('userpages/{householditem}/updatehouseholditem');
 Route::PATCH('/userpages/{householditem}/updatehouseholditem', 'HouseholditemController@update');
+Route::get('/userpages/{clothing}/updateclothes', 'ClothingController@show');
+Route::PATCH('/userpages/{clothing}/updateclothes', 'ClothingController@update');
+//delete
 Route::get('/userpages/{grocery}/deletegrocery', 'GroceryController@showDelete');
 Route::DELETE('/userpages/{grocery}/deletegrocery', 'GroceryController@destroy');
-Route::DELETE('/userpages/shoppinglist', 'GroceryController@destroyAll');
+Route::DELETE('/userpages/shoppinglistgrocery', 'GroceryController@destroyAll');
 
 Route::get('/userpages/{householditem}/deletehouseholditem', 'HouseholditemController@showDelete');
 Route::DELETE('/userpages/{householditem}/deletehouseholditem', 'HouseholditemController@destroy');
-Route::DELETE('/userpages/shoppinglist', 'HouseholditemController@destroyAll');
+Route::DELETE('/userpages/shoppinglisthouseholditems', 'HouseholditemController@destroyAll');
+
+Route::get('/userpages/{clothing}/deleteclothes', 'ClothingController@showDelete');
+Route::DELETE('/userpages/{clothing}/deleteclothes', 'ClothingController@destroy');
+Route::DELETE('/userpages/shoppinglistclothes', 'ClothingController@destroyAll');

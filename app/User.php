@@ -48,4 +48,8 @@ class User extends Authenticatable
     {
         return $this->hasMany(Householditem::class);
     }
+    public function clothings()
+    {
+      return $this->hasMany(Clothing::class);
+    }
 }

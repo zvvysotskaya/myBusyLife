@@ -102,7 +102,7 @@ class HouseholditemController extends Controller
                 'description'
             ])
         );
-        return back();
+        return redirect('/userpages.shoppinglisthouseholditems');
     }
 
     /**

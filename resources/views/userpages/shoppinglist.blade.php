@@ -42,13 +42,7 @@
                       @endforeach
                   </table>
               </div>
-              <div class="text-center">
-                  <form method="POST" action="{{ url('userpages/shoppinglist') }}">
-                      @method('DELETE')
-                      {{ csrf_field() }}
-                      <button type="submit" class="btn btn-warning">Delete All</button>
-                  </form>
-              </div>
+
           </div>
       </div>
 </div>
@@ -66,14 +60,14 @@
                              <th class="text-center">Description</th>
                          </tr>
                      </thead>
-                     <!--
-                     @foreach($groceries as $grocery)
+
+                     @foreach($clothings as $clothing)
                      <tbody>
-                         <th>{{$grocery->groceryname}}</th>
-                         <th>{{$grocery->quantity}}</th>
-                         <th>{{$grocery->description}}</th>
+                         <th>{{ $clothing->clothing }}</th>
+                         <th>{{ $clothing->quantity }}</th>
+                         <th>{{ $clothing->description }}</th>
                      </tbody>
-                     @endforeach -->
+                     @endforeach
                  </table>
              </div>
          </div>
@@ -108,6 +102,5 @@
         </div>
     </div>
 </div>
-
 
 @endsection

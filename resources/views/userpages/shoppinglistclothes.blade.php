@@ -27,8 +27,8 @@
                     <form method="POST" action="/userpages.shoppinglistclothes" class="">
                     {{csrf_field()}}
                     <div class="form-group">
-                        <label for="itemname">Clothing:</label>
-                            <input type="text" name="itemname" required="required" class="form-control">
+                        <label for="clothing">Clothing:</label>
+                            <input type="text" name="clothing" required="required" class="form-control">
                     </div>
                         <div class="form-group">
                             <label for="quantity">Quantity:</lable>
@@ -44,7 +44,7 @@
                     <hr id="hrGreen">
                     <br><br>
                 </div>
-                <h4>Household Items</h4>
+                <h4>Clothing</h4>
                 <br>
                 <div class="container">
                     <table class="table table-striped">
@@ -59,22 +59,29 @@
                         </thead>
                         @foreach($clothings as $clothing)
                         <tbody>
-                            <th>{{$clothing->clothingname}}</th>
-                            <th>{{$clothing->quantity}}</th>
-                            <th>{{$clothing->description}}</th>
+                            <th>{{ $clothing->clothing }}</th>
+                            <th>{{ $clothing->quantity }}</th>
+                            <th>{{ $clothing->description }}</th>
                             <th>
-                                <form method="GET" action="/userpages/{{$clothing->id}}/updateclothing">
+                                <form method="GET" action="/userpages/{{$clothing->id}}/updateclothes">
                                     <input type="submit" class="btn btn-primary" value="Update">
                                 </form>
                             </th>
                             <th>
-                                <form method="GET" action="/userpages/{{$clothing->id}}/deleteclothing">
+                                <form method="GET" action="/userpages/{{$clothing->id}}/deleteclothes">
                                     <input type="submit" class="btn btn-danger" value="Delete">
                                 </form>
                             </th>
                         </tbody>
                         @endforeach
                     </table>
+                    <div class="text-center">
+                        <form method="POST" action="{{ url('userpages/shoppinglistclothes') }}">
+                            @method('DELETE')
+                            {{ csrf_field() }}
+                            <button type="submit" class="btn btn-warning">Delete All</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
