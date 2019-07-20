@@ -14,14 +14,14 @@
         <div class="col-lg-4 col4created">
             <div class="text-center">
                 <a href="{{ url('userpages.shoppinglist') }}" class="btn btn-lg btn1 btn-block">
-                    shopping list
+                    Created Shopping List
                 </a>
             </div>
         </div>
         <div class="col-lg-4 col4created">
             <div class="text-center">
                 <a href="{{ url('userpages.chorelist') }}" class="btn btn-lg btn2 btn-block">
-                    chore list
+                    Created Chore List
                 </a>
             </div>
         </div>

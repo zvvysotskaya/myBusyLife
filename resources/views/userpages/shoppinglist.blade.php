@@ -2,13 +2,13 @@
 @section('content')
 @section('title', 'shopping list')
 <h3>Hello {{ Auth::user()->name }}</h3>
-<h1>My Shopping List</h1>
+<h1 class="mb-lg-5 mb-md-4 mb-2">My Shopping List</h1>
 
 <!--display buttons for a user account and a chore list-->
 
 @auth
 <div class="text-center">
-    <div class="btn-group">
+    <div class="btn-group mb-0 mb-md-1 mb-lg-2">
         <form action={{ '/userpages.chorelist' }}>
             <button type="submit" class="btn btn-danger">Chore List</button><br>
         </form>
@@ -20,7 +20,7 @@
 @endauth
 
 <!--display a groecery list-->
-<div class="bg_tb mt-5 py-4">
+<div class="bg_tb py-4">
     <div class="container">
         <div class="bg_box">
             <h4>A Grocery List</h4>
