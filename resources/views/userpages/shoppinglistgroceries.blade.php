@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
-<h1>Create / Manage A Groceries List</h1>
+<h1 class="mb-lg-4 mb-md-2 mb-0">Create / Manage A Groceries List</h1>
 @Auth
 <div class="text-center">
-    <div class="btn-group">
+    <div class="btn-group mb-lg-2 mb-md-1 mb-0">
         <form action="{{ '/userpages.shoppinglist' }}">
             <button type="submit" class="btn btn-danger">Shopping List</button>
         </form>
