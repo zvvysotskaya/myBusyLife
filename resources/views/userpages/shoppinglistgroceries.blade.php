@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<h1 class="mb-lg-4 mb-md-2 mb-0">Create/Manage The Groceries List</h1>
+<h1 class="mb-lg-4 mb-md-2 mb-0">Create/Manage The Grocery List</h1>
 @Auth
 <div class="text-center">
     <div class="btn-group mb-lg-2 mb-md-1 mb-0">
@@ -23,6 +23,7 @@
     <div class="col-lg-6 col4create">
     <div class="col-lg-12 col12create">
         <div class="container">
+            <h4>Add to Your List</h4>
             <form method="POST" action="/userpages.shoppinglistgroceries" class="groceries">
                 {{csrf_field()}}
                 <div class="form-group">
@@ -43,7 +44,7 @@
             <hr id="hrGreen">
             <br><br>
         </div>
-        <h4>A Grocery List</h4>
+        <h4>On Your List</h4>
         <br>
         <div class="container">
             <table class="table table-striped">

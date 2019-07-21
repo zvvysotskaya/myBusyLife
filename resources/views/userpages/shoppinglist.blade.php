@@ -23,7 +23,7 @@
 <div class="bg_tb py-4">
     <div class="container">
         <div class="bg_box">
-            <h4>A Grocery List</h4>
+            <h4>The Grocery Shopping List</h4>
             <div class="container">
                 <table class="table table-hover ">
                     <thead class="table-warning">
@@ -50,7 +50,7 @@
 <div class="bg_tb mt-5 py-4 mt-md-0 mt-sm-0">
     <div class="container">
         <div class="bg_box">
-            <h4>A Clothing List</h4>
+            <h4>The Shopping List For Clothes</h4>
             <div class="container">
                 <table class="table table-hover">
                     <thead class="table-warning">

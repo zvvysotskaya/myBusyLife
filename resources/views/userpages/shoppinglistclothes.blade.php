@@ -24,6 +24,7 @@
         <div class="col-lg-6 col4create">
             <div class="col-lg-12 col12create">
                 <div class="container">
+                    <h4>Add to Your List</h4>
                     <form method="POST" action="/userpages.shoppinglistclothes" class="">
                     {{csrf_field()}}
                     <div class="form-group">
@@ -44,7 +45,7 @@
                     <hr id="hrGreen">
                     <br><br>
                 </div>
-                <h4>Clothing</h4>
+                <h4>On Your List</h4>
                 <br>
                 <div class="container">
                     <table class="table table-striped">
