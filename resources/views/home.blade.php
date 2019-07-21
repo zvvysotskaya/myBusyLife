@@ -11,14 +11,14 @@
 <!--There are buttons to access created items-->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-6 col4created">
+        <div class="col-md-6 col4created">
             <div class="text-center">
                 <a href="{{ url('userpages.shoppinglist') }}" class="btn btn-lg btn1 btn-block">
                     Created Shopping List
                 </a>
             </div>
         </div>
-        <div class="col-6 col4created">
+        <div class="col-md-6 col4created">
             <div class="text-center">
                 <a href="{{ url('userpages.chorelist') }}" class="btn btn-lg btn2 btn-block">
                     Created Chore List
@@ -32,7 +32,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-6 col4create">
+        <div class="col-md-6 col4create">
             <div class="col-12 col12create text-center">
                 <h4>Create a New Shopping List</h4>
                 <br><br>
@@ -56,7 +56,7 @@
                 </ul>
             </div><!--.col-12-->
         </div><!--.col-lg-6-->
-        <div class="col-6 col4create">
+        <div class="col-md-6 col4create">
             <div class="col-12 col12create text-center">
                 <h4>Create a New Chore List</h4>
                 <br><br>
@@ -85,20 +85,20 @@
 <h1 class="my-4">ARCHIVE</h1>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-6 col-sm-12 col4create">
+        <div class="col-md-6  col4create">
             <div class="text-center">
                 <a href="#" class="btn btn-lg btn1 btn-block">
                     shopping
                 </a>
             </div>
         </div>
-        <div class="col-6  col-sm-12 col4create">
+        <div class="col-md-6  col4create">
             <div class="text-center">
                 <a href="#" class="btn btn-lg btn2 btn-block">
                     chore
                 </a>
             </div>
-        </div>        
+        </div>
     </div><!--.row-->
 </div><!--.container-fluid-->
 <br>
