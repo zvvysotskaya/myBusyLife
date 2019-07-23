@@ -90,4 +90,10 @@
         </div>
     </div>
 </div>
+<div class="jq">
+
+</div>
+$(function(){
+  $('.jq').html('hello');
+});
 @endsection
