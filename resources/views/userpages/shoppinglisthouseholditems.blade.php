@@ -49,7 +49,7 @@
                 <h4>On Your List</h4>
                 <br>
                 <div class="container">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-responsive">
                         <thead>
                             <tr>
                                 <th style="width:30%">Household Item Name</th>

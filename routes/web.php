@@ -44,7 +44,7 @@ Route::PATCH('/userpages/{clothing}/updateclothes', 'ClothingController@update')
 //delete
 Route::get('/userpages/{grocery}/deletegrocery', 'GroceryController@showDelete');
 Route::DELETE('/userpages/{grocery}/deletegrocery', 'GroceryController@destroy');
-Route::DELETE('/userpages/shoppinglistgrocery', 'GroceryController@destroyAll');
+Route::DELETE('/userpages/shoppinglistgroceries', 'GroceryController@destroyAll');
 
 Route::get('/userpages/{householditem}/deletehouseholditem', 'HouseholditemController@showDelete');
 Route::DELETE('/userpages/{householditem}/deletehouseholditem', 'HouseholditemController@destroy');

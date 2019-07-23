@@ -48,14 +48,14 @@
                 <h4>On Your List</h4>
                 <br>
                 <div class="container">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-responsive">
                         <thead>
                             <tr>
-                                <th style="width:30%">Clothing</th>
-                                <th style="width:10%">Quantity</th>
-                                <th style="width:40%">Description</th>
-                                <th style="width:10%">Update</th>
-                                <th style="width:10%">Delete</th>
+                                <th style="width:30%" scope="col">Clothing</th>
+                                <th style="width:10%" scope="col">Quantity</th>
+                                <th style="width:40%" scope="col">Description</th>
+                                <th style="width:9%" scope="col">Update</th>
+                                <th style="width:9%" scope="col">Delete</th>
                             </tr>
                         </thead>
                         @foreach($clothings as $clothing)
