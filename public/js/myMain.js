@@ -15,7 +15,6 @@ $(function(){
       $('.grocery1').find(dd4).css({'background-color':'red', 'color':'white'});
       $('.grocery1').find(dd5).css({'background-color':'red', 'color':'white'});
       $('.grocery1').find(dd6).css({'background-color':'red', 'color':'white'});
-
       }else{
       $('.grocery1').find(dd4).attr('style','color:black');
       $('.grocery1').find(dd5).attr('style','color:black');
@@ -38,7 +37,6 @@ $(function(){
       $('.clothes1').find(dd1).css({'background-color':'pink', 'color':'blue'});
       $('.clothes1').find(dd2).css({'background-color':'pink', 'color':'blue'});
       $('.clothes1').find(dd3).css({'background-color':'pink', 'color':'blue'});
-
       }else{
       $('.clothes1').find(dd1).attr('style','color:black');
       $('.clothes1').find(dd2).attr('style','color:black');
@@ -61,7 +59,6 @@ if( $(this).prop('checked')){
     $('.household1').find(dd7).css({'background-color':'green', 'color':'white'});
     $('.household1').find(dd8).css({'background-color':'green', 'color':'white'});
     $('.household1').find(dd9).css({'background-color':'green', 'color':'white'});
-    alert('maxChildren clothes '+ maxChildren3 +' max boxes '+ maxCheckboxes3 +' box index/number '+c);
     }else{
     $('.household1').find(dd7).attr('style','color:black');
     $('.household1').find(dd8).attr('style','color:black');
