@@ -27,17 +27,21 @@
             <div class="container">
                 <table class="table table-hover ">
                     <thead class="table-warning">
-                         <tr >
-                             <th class="text-center">Grocery Name</th>
-                             <th class="text-center">Quantity</th>
-                             <th class="text-center">Description</th>
+                         <tr>
+                           <th style="width:5%"></th>
+                           <th  style="width:20%">Grocery Name</th>
+                           <th  style="width:10%">Quantity</th>
+                           <th  style="width:63%">Description</th>
                           </tr>
                       </thead>
                       @foreach($groceries as $grocery)
                       <tbody class="table_shoppinglist">
-                          <th class="text-center">{{$grocery->groceryname}}</th>
-                          <th class="text-center">{{$grocery->quantity}}</th>
-                          <th class="text-center" >{{$grocery->description}}</th>
+                        <tr class="grocery1">
+                          <td ><input type="checkbox" checked="checked" class="grocery"></td>
+                          <td>{{$grocery->groceryname}}</td>
+                          <td>{{$grocery->quantity}}</td>
+                          <td>{{$grocery->description}}</td>
+                        </tr>
                       </tbody>
                       @endforeach
                   </table>
@@ -52,20 +56,23 @@
         <div class="bg_box">
             <h4>The Shopping List For Clothes</h4>
             <div class="container">
-                <table class="table table-hover">
+                <table class="table table-hover clothes">
                     <thead class="table-warning">
                         <tr>
-                             <th class="text-center">Clothing Items</th>
-                             <th class="text-center">Quantity</th>
-                             <th class="text-center">Description</th>
+                             <th style="width:5%"></th>
+                             <th  style="width:20%">Clothing Items</th>
+                             <th  style="width:10%">Quantity</th>
+                             <th  style="width:63%">Description</th>
                          </tr>
                      </thead>
-
                      @foreach($clothings as $clothing)
                      <tbody>
-                         <th>{{ $clothing->clothing }}</th>
-                         <th>{{ $clothing->quantity }}</th>
-                         <th>{{ $clothing->description }}</th>
+                       <tr class="clothes1">
+                        <td ><input type="checkbox" checked="checked" class="clothes"></td>
+                         <td>{{ $clothing->clothing }}</td>
+                         <td>{{ $clothing->quantity }}</td>
+                         <td>{{ $clothing->description }}</td>
+                       </tr>
                      </tbody>
                      @endforeach
                  </table>
@@ -84,16 +91,20 @@
                 <table class="table table-hover">
                     <thead class="table-warning">
                         <tr>
-                            <th class="text-center">Houshold Item Name</th>
-                            <th class="text-center">Quantity</th>
-                            <th class="text-center">Description</th>
+                          <th style="width:5%"></th>
+                          <th  style="width:20%">Household Item Name</th>
+                          <th  style="width:10%">Quantity</th>
+                          <th  style="width:63%">Description</th>
                         </tr>
                     </thead>
                     @foreach($householditems as $householditem)
                     <tbody class="table_shoppinglist">
-                        <th class="text-center">{{$householditem->itemname}}</th>
-                        <th class="text-center">{{$householditem->quantity}}</th>
-                        <th class="text-center">{{$householditem->description}}</th>
+                      <tr class="household1">
+                        <td><input type="checkbox" checked="checked" class="household"></td>
+                        <td>{{$householditem->itemname}}</td>
+                        <td>{{$householditem->quantity}}</td>
+                        <td>{{$householditem->description}}</td>
+                      </tr>
                     </tbody>
                     @endforeach
                 </table>

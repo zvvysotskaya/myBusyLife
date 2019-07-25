@@ -51,15 +51,18 @@
                     <table class="table table-striped table-responsive">
                         <thead>
                             <tr>
+                               
                                 <th style="width:30%" scope="col">Clothing</th>
                                 <th style="width:10%" scope="col">Quantity</th>
                                 <th style="width:40%" scope="col">Description</th>
                                 <th style="width:9%" scope="col">Update</th>
                                 <th style="width:9%" scope="col">Delete</th>
+
                             </tr>
                         </thead>
                         @foreach($clothings as $clothing)
                         <tbody>
+
                             <th>{{ $clothing->clothing }}</th>
                             <th>{{ $clothing->quantity }}</th>
                             <th>{{ $clothing->description }}</th>
@@ -73,6 +76,7 @@
                                     <input type="submit" class="btn btn-danger" value="Delete">
                                 </form>
                             </th>
+
                         </tbody>
                         @endforeach
                     </table>
@@ -93,7 +97,6 @@
 <div class="jq">
 
 </div>
-$(function(){
-  $('.jq').html('hello');
-});
+
+
 @endsection
