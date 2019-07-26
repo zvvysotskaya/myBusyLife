@@ -46,7 +46,7 @@
                             Categories
                             <span class="caret"></span>
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu home_categories">
                             <li class="text-center"><a href="{{ url('userpages.shoppinglistgroceries') }}">Groceries</a></li>
                             <li class="text-center"><a href="{{ url('userpages.shoppinglisthouseholditems') }}">Household Items</a></li>
                             <li class="text-center"><a href="{{ url('userpages.shoppinglistclothes') }}">Clothes</a></li>
@@ -70,7 +70,7 @@
                             Categories
                             <span class="caret"></span>
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu home_categories">
                             <li class="text-center"><a href="{{ url('userpages.chorelisthome') }}">Household</a></li>
                             <li class="text-center"><a href="{{ url('userpages.chorelistjob') }}">Job</a></li>
                             <li class="text-center"><a href="{{ url('userpages.chorelistentertainment') }}">Entertainment</a></li>
