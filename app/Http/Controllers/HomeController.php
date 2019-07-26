@@ -8,6 +8,7 @@ use App\Grocery;
 use App\Householditem;
 use App\Clothing;
 use App\Householdchore;
+use App\Mytodo;
 
 class HomeController extends Controller
 {
@@ -36,8 +37,9 @@ class HomeController extends Controller
     }
     public function chorelist()
     {
+        $mytodos = Mytodo::all()->where('user_id', Auth::id());
         $householdchores = Householdchore::all()->where('user_id', Auth::id());
-        return view('userpages.chorelist', compact('householdchores'));
+        return view('userpages.chorelist', compact('householdchores', 'mytodos'));
 
     }
     public function shoppinglist()
@@ -74,6 +76,7 @@ class HomeController extends Controller
     }
     public function chorelistentertainment()
     {
-      return view('userpages.chorelistentertainment');
+      $mytodos = Mytodo::all()->where('user_id', Auth::id());
+      return view('userpages.chorelistentertainment', compact('mytodos'));
     }
 }

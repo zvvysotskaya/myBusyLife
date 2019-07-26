@@ -37,13 +37,22 @@ Route::POST('/userpages.shoppinglistclothes', 'ClothingController@store');
 //chore list
 //Store
 Route::POST('userpages.chorelisthome', 'HouseholdChoreController@store');
+Route::POST('userpages.chorelistentertainment', 'MytodoController@store');
 //chorelist update
 Route::get('/userpages/{householdchore}/updatehouseholdchore', 'HouseholdChoreController@show');
 Route::PATCH('/userpages/{householdchore}/updatehouseholdchore', 'HouseholdChoreController@update');
+Route::get('/userpages/{mytodo}/updatemytodo', 'MytodoController@show');
+Route::PATCH('/userpages/{mytodo}/updatemytodo', 'MytodoController@update');
 //chorelist delete
 Route::get('/userpages/{householdchore}/deletehouseholdchore', 'HouseholdChoreController@showDelete');
 Route::DELETE('/userpages/{householdchore}/deletehouseholdchore', 'HouseholdChoreController@destroy');
 Route::DELETE('/userpages/chorelisthome', 'HouseholdChoreController@destroyAll');
+
+Route::get('/userpages/{mytodo}/deletemytodo', 'MytodoController@showDelete');
+Route::DELETE('/userpages/{mytodo}/deletemytodo', 'MytodoController@destroy');
+Route::DELETE('/userpages/chorelistentertainment', 'MytodoController@destroyAll');
+
+
 
 Route::get('/userpages/{grocery}/updategrocery', 'GroceryController@show')->name('userpages/{grocery}/updategrocery');
 Route::PATCH('/userpages/{grocery}/updategrocery', 'GroceryController@update')->name('userpages/{grocery}/updategrocery');
