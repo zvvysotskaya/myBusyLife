@@ -10,7 +10,7 @@
 <div class="text-center">
     <div class="btn-group mb-0 mb-md-1 mb-lg-2">
         <form action={{ '/userpages.shoppinglist' }}>
-            <button type="submit" class="btn btn-danger">Shopping Lists</button><br>
+            <button type="submit" class="btn btn-danger">Shopping Lists</button>
         </form>
         <form action={{ '/home' }}>
             <button class="btn btn-danger">Account</button>
