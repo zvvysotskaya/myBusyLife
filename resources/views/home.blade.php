@@ -14,14 +14,14 @@
         <div class="col-md-6 col4created">
             <div class="text-center">
                 <a href="{{ url('userpages.shoppinglist') }}" class="btn btn-lg btn1 btn-block">
-                    Created Shopping List
+                    Created Shopping Lists
                 </a>
             </div>
         </div>
         <div class="col-md-6 col4created">
             <div class="text-center">
                 <a href="{{ url('userpages.chorelist') }}" class="btn btn-lg btn2 btn-block">
-                    Created Chore List
+                    Created To Do Lists
                 </a>
             </div>
         </div>
@@ -34,7 +34,7 @@
     <div class="row">
         <div class="col-md-6 col4create">
             <div class="col-12 col12create text-center">
-                <h4>Create a New Shopping List</h4>
+                <h4>Create New Shopping Lists</h4>
                 <br><br>
                 <ul class="list-unstyled  justify-content-center">
                     <li class="mb-3">
@@ -58,7 +58,7 @@
         </div><!--.col-lg-6-->
         <div class="col-md-6 col4create">
             <div class="col-12 col12create text-center">
-                <h4>Create a New Chore List</h4>
+                <h4>Create New To Do Lists</h4>
                 <br><br>
                 <ul class="list-unstyled  justify-content-center">
                     <li class="mb-3">
@@ -72,8 +72,9 @@
                         </button>
                         <ul class="dropdown-menu home_categories">
                             <li class="text-center"><a href="{{ url('userpages.chorelisthome') }}">Household</a></li>
-                            <li class="text-center"><a href="{{ url('userpages.chorelistjob') }}">Job</a></li>
-                            <li class="text-center"><a href="{{ url('userpages.chorelistentertainment') }}">Entertainment</a></li>
+                            <li class="text-center"><a href="{{ url('userpages.chorelistentertainment') }}">My To Do List</a></li>
+                            <li class="text-center"><a href="{{ url('userpages.chorelistjob') }}">Work</a></li>
+
                         </ul>
                     </div><!--dropdown-->
                     </li>

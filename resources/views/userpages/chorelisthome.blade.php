@@ -8,10 +8,10 @@
   <div class="text-center">
       <div class="btn-group mb-lg-2 mb-md-1 mb-0">
           <form action="{{ '/userpages.shoppinglist' }}">
-              <button type="submit" class="btn btn-danger">Shopping List</button>
+              <button type="submit" class="btn btn-danger">Shopping Lists</button>
           </form>
           <form action="{{ '/userpages.chorelist' }}">
-              <button type="submit" class="btn btn-danger">Chore List</button>
+              <button type="submit" class="btn btn-danger">To Do Lists</button>
           </form>
           <form action="{{ '/home' }}">
               <button type="submit" class="btn btn-danger">Account</button>
@@ -43,7 +43,7 @@
               <hr id="hrGreen">
               <br><br>
           </div>
-          <h4>On Your List</h4>          
+          <h4>On Your List</h4>
           <br>
           <div class="container">
               <table class="table table-striped table-responsive">
