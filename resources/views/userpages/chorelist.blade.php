@@ -87,12 +87,12 @@
                            <th  style="width:58%">Description</th>
                           </tr>
                       </thead>
-                      @foreach($householdchores as $householdchore)
+                      @foreach($worktodos as $worktodo)
                       <tbody class="table_shoppinglist">
-                        <tr class="householdchore1">
-                          <td><input type="checkbox" checked="checked" class="householdchore"></td>
-                          <td>{{ $householdchore->task }}</td>
-                          <td>{{ $householdchore->description }}</td>
+                        <tr class="worktodo1">
+                          <td><input type="checkbox" checked="checked" class="worktodo"></td>
+                          <td>{{ $worktodo->task }}</td>
+                          <td>{{ $worktodo->description }}</td>
                         </tr>
                       </tbody>
                       @endforeach

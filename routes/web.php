@@ -38,11 +38,14 @@ Route::POST('/userpages.shoppinglistclothes', 'ClothingController@store');
 //Store
 Route::POST('userpages.chorelisthome', 'HouseholdChoreController@store');
 Route::POST('userpages.chorelistentertainment', 'MytodoController@store');
+Route::POST('userpages.chorelistjob', 'WorktodoController@store');
 //chorelist update
 Route::get('/userpages/{householdchore}/updatehouseholdchore', 'HouseholdChoreController@show');
 Route::PATCH('/userpages/{householdchore}/updatehouseholdchore', 'HouseholdChoreController@update');
 Route::get('/userpages/{mytodo}/updatemytodo', 'MytodoController@show');
 Route::PATCH('/userpages/{mytodo}/updatemytodo', 'MytodoController@update');
+Route::get('/userpages/{worktodo}/updateworktodo', 'WorktodoController@show');
+Route::PATCH('/userpages/{worktodo}/updateworktodo', 'WorktodoController@update');
 //chorelist delete
 Route::get('/userpages/{householdchore}/deletehouseholdchore', 'HouseholdChoreController@showDelete');
 Route::DELETE('/userpages/{householdchore}/deletehouseholdchore', 'HouseholdChoreController@destroy');
@@ -51,6 +54,10 @@ Route::DELETE('/userpages/chorelisthome', 'HouseholdChoreController@destroyAll')
 Route::get('/userpages/{mytodo}/deletemytodo', 'MytodoController@showDelete');
 Route::DELETE('/userpages/{mytodo}/deletemytodo', 'MytodoController@destroy');
 Route::DELETE('/userpages/chorelistentertainment', 'MytodoController@destroyAll');
+
+Route::get('/userpages/{worktodo}/deleteworktodo', 'WorktodoController@showDelete');
+Route::DELETE('/userpages/{worktodo}/deleteworktodo', 'WorktodoController@destroy');
+Route::DELETE('/userpages/chorelistjob', 'WorktodoController@destroyAll');
 
 
 
