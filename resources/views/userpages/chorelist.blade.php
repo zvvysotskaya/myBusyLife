@@ -64,7 +64,7 @@
                         <tr class="householdchore1">
                           <td><input type="checkbox" checked="checked" class="householdchore"></td>
                           <td>{{ $mytodo->task }}</td>
-                          <td>{{ $mytodoe->description }}</td>
+                          <td>{{ $mytodo->description }}</td>
                         </tr>
                       </tbody>
                       @endforeach
