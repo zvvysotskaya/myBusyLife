@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Grocery;
 use App\Householditem;
 use App\Clothing;
+use App\Householdchore;
 
 class HomeController extends Controller
 {
@@ -35,7 +36,9 @@ class HomeController extends Controller
     }
     public function chorelist()
     {
-        return view('userpages.chorelist');
+        $householdchores = Householdchore::all()->where('user_id', Auth::id());
+        return view('userpages.chorelist', compact('householdchores'));
+
     }
     public function shoppinglist()
     {
@@ -62,7 +65,8 @@ class HomeController extends Controller
     }
     public function chorelisthome()
     {
-      return view('userpages.chorelisthome');
+      $householdchores = Householdchore::all()->where('user_id', Auth::id());
+      return view('userpages.chorelisthome', compact('householdchores'));
     }
     public function chorelistjob()
     {

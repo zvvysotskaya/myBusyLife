@@ -7,7 +7,8 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use App\Grocery;
-use App\Householitem;
+use App\Householditem;
+use App\Householdchore;
 
 class User extends Authenticatable
 {
@@ -51,5 +52,8 @@ class User extends Authenticatable
     public function clothings()
     {
       return $this->hasMany(Clothing::class);
+    }
+    public function householdchores(){
+      return $this->hasMany(Householdchore::class);
     }
 }

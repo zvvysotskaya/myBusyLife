@@ -14,27 +14,6 @@ class HouseholditemController extends Controller
     {
         $this->middleware('auth');
     }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-
-
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -73,17 +52,6 @@ class HouseholditemController extends Controller
     public function showDelete(Householditem $householditem)
     {
         return view('userpages.deletehouseholditem', compact('householditem'));
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Householditem  $householditem
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Householditem $householditem)
-    {
-        //
     }
 
     /**
