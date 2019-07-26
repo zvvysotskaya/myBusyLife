@@ -8,7 +8,10 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use App\Grocery;
 use App\Householditem;
+use App\Clothing;
 use App\Householdchore;
+use App\Mytodo;
+use App\Worktodo;
 
 class User extends Authenticatable
 {
@@ -55,5 +58,11 @@ class User extends Authenticatable
     }
     public function householdchores(){
       return $this->hasMany(Householdchore::class);
+    }
+    public function mytodos(){
+      return $this->hasMany(Mytodo::class);
+    }
+    public function worktodos(){
+      return $this->hasMany(Worktodo::class);
     }
 }
