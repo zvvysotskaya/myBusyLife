@@ -37,7 +37,7 @@
                       @foreach($groceries as $grocery)
                       <tbody class="table_shoppinglist">
                         <tr class="grocery1">
-                          <td ><input type="checkbox" name="completed"  onChange="this.form.submit()" class="grocery"></td>
+                          <td><input type="checkbox" name="completed"  onChange="checked" class="grocery"></td>
                           <td>{{$grocery->groceryname}}</td>
                           <td>{{$grocery->quantity}}</td>
                           <td>{{$grocery->description}}</td>
@@ -68,7 +68,7 @@
                      @foreach($clothings as $clothing)
                      <tbody>
                        <tr class="clothes1">
-                        <td ><input type="checkbox" name="completed" class="clothes"></td>
+                        <td ><input type="checkbox" name="completed" onChange="checked" class="clothes"></td>
                          <td>{{ $clothing->clothing }}</td>
                          <td>{{ $clothing->quantity }}</td>
                          <td>{{ $clothing->description }}</td>
@@ -100,7 +100,7 @@
                     @foreach($householditems as $householditem)
                     <tbody class="table_shoppinglist">
                       <tr class="household1">
-                        <td><input type="checkbox" class="household"></td>
+                        <td><input type="checkbox" onChange="checked" class="household"></td>
                         <td>{{$householditem->itemname}}</td>
                         <td>{{$householditem->quantity}}</td>
                         <td>{{$householditem->description}}</td>

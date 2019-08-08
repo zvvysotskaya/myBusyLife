@@ -34,8 +34,8 @@
                       </thead>
                       @foreach($householdchores as $householdchore)
                       <tbody class="table_shoppinglist">
-                        <tr class="householdchore1">
-                          <td><input type="checkbox"  class="householdchore"></td>
+                        <tr class="householdChore1">
+                          <td><input type="checkbox"  onChange="checked" class="householdChore"></td>
                           <td>{{ $householdchore->task }}</td>
                           <td>{{ $householdchore->description }}</td>
                         </tr>
@@ -61,8 +61,8 @@
                       </thead>
                       @foreach($mytodos as $mytodo)
                       <tbody class="table_shoppinglist">
-                        <tr class="householdchore1">
-                          <td><input type="checkbox" class="householdchore"></td>
+                        <tr class="myToDo1">
+                          <td><input type="checkbox" onChange="checked" class="myToDo"></td>
                           <td>{{ $mytodo->task }}</td>
                           <td>{{ $mytodo->description }}</td>
                         </tr>
@@ -72,7 +72,7 @@
               </div><!--.container-->
          </div>
      </div>
- </div>s
+ </div>
 <!--Display  a to do list for work-->
 <div class="bg_tb mt-5 py-4 mt-md-0 mt-sm-0">
     <div class="container">
@@ -89,8 +89,8 @@
                       </thead>
                       @foreach($worktodos as $worktodo)
                       <tbody class="table_shoppinglist">
-                        <tr class="worktodo1">
-                          <td><input type="checkbox" checked="checked" class="worktodo"></td>
+                        <tr class="workToDo1">
+                          <td><input type="checkbox" onChange="checked" class="workToDo"></td>
                           <td>{{ $worktodo->task }}</td>
                           <td>{{ $worktodo->description }}</td>
                         </tr>
