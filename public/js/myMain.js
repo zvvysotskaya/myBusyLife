@@ -34,9 +34,9 @@ $(function(){
     var dd3 = $('.clothes1 td')[(childNum) - 3];
 
   if( $(this).prop('checked')){
-      $('.clothes1').find(dd1).css({'background-color':'pink', 'color':'blue'});
-      $('.clothes1').find(dd2).css({'background-color':'pink', 'color':'blue'});
-      $('.clothes1').find(dd3).css({'background-color':'pink', 'color':'blue'});
+      $('.clothes1').find(dd1).css({'background-color':'yellow', 'color':'blue'});
+      $('.clothes1').find(dd2).css({'background-color':'yellow', 'color':'blue'});
+      $('.clothes1').find(dd3).css({'background-color':'yellow', 'color':'blue'});
       }else{
       $('.clothes1').find(dd1).attr('style','color:black');
       $('.clothes1').find(dd2).attr('style','color:black');
