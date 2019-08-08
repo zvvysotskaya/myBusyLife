@@ -12,9 +12,9 @@ $(function(){
     var dd6 = $('.grocery1 td')[(childNum2) - 3];
 
   if( $(this).prop('checked')){
-      $('.grocery1').find(dd4).css({'background-color':'red', 'color':'white'});
-      $('.grocery1').find(dd5).css({'background-color':'red', 'color':'white'});
-      $('.grocery1').find(dd6).css({'background-color':'red', 'color':'white'});
+      $('.grocery1').find(dd4).css({'background-color':'pink', 'color':'blue'});
+      $('.grocery1').find(dd5).css({'background-color':'pink', 'color':'blue'});
+      $('.grocery1').find(dd6).css({'background-color':'pink', 'color':'blue'});
       }else{
       $('.grocery1').find(dd4).attr('style','color:black');
       $('.grocery1').find(dd5).attr('style','color:black');
@@ -56,9 +56,9 @@ $('input:checkbox[class=household]').change(function(){
   var dd9 = $('.household1 td')[(childNum3) - 3];
 
 if( $(this).prop('checked')){
-    $('.household1').find(dd7).css({'background-color':'green', 'color':'white'});
-    $('.household1').find(dd8).css({'background-color':'green', 'color':'white'});
-    $('.household1').find(dd9).css({'background-color':'green', 'color':'white'});
+    $('.household1').find(dd7).css({'background-color':'yellow', 'color':'black'});
+    $('.household1').find(dd8).css({'background-color':'yellow', 'color':'black'});
+    $('.household1').find(dd9).css({'background-color':'yellow', 'color':'black'});
     }else{
     $('.household1').find(dd7).attr('style','color:black');
     $('.household1').find(dd8).attr('style','color:black');

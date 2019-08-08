@@ -35,7 +35,7 @@
                       @foreach($householdchores as $householdchore)
                       <tbody class="table_shoppinglist">
                         <tr class="householdchore1">
-                          <td><input type="checkbox" checked="checked" class="householdchore"></td>
+                          <td><input type="checkbox"  class="householdchore"></td>
                           <td>{{ $householdchore->task }}</td>
                           <td>{{ $householdchore->description }}</td>
                         </tr>
@@ -62,7 +62,7 @@
                       @foreach($mytodos as $mytodo)
                       <tbody class="table_shoppinglist">
                         <tr class="householdchore1">
-                          <td><input type="checkbox" checked="checked" class="householdchore"></td>
+                          <td><input type="checkbox" class="householdchore"></td>
                           <td>{{ $mytodo->task }}</td>
                           <td>{{ $mytodo->description }}</td>
                         </tr>

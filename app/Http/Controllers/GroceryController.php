@@ -35,7 +35,8 @@ class GroceryController extends Controller
         'user_id' => Auth::id(),
         'groceryname' => request('groceryname'),
         'quantity' => request('quantity'),
-        'description' => request('description')
+        'description' => request('description'),
+        
       ]);
       return back();
     }
@@ -69,7 +70,8 @@ class GroceryController extends Controller
             request([
                 'groceryname',
                 'description',
-                'quantity'
+                'quantity',
+
             ])
         );
         return redirect('/userpages.shoppinglistgroceries');
